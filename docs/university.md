@@ -58,6 +58,18 @@ pageClass: routes
 
 <Route author="TPOB" example="/pku/cls/lecture" path="/universities/pku/cls/lecture" />
 
+### 北大未名 BBS 全站十大
+
+<Route author="wooddance" example="/pku/bbs/hot" path="/universities/pku/bbs/hot">
+
+::: warning 注意
+
+论坛部分帖子正文内容的获取需要用户登录后的 Cookie 值，详情见部署页面的配置模块。
+
+:::
+
+</Route>
+
 ## 北京航空航天大学
 
 ### 北京航空航天大学
@@ -232,6 +244,18 @@ xskb1 对应 http://www.auto.uestc.edu.cn/index/xskb1.htm
 可自定义设置
 
 注 2: 用+号来叠加，通知公告+学术看板 `/uestc/auto/tzgg1+xskb1`
+
+</Route>
+
+## 东北大学
+
+### 东北大学新闻网
+
+<Route author="JeasonLau" example="/neu/news/ddyw" path="/neu/news/:type" :paramsDesc="['种类名']">
+
+| 东大要闻 | 媒体东大 | 通知公告 | 新闻纵横 | 人才培养 | 学术科研 | 英文新闻 | 招生就业 | 考研出国 | 校园文学 | 校友风采 |
+| -------- | -------- | -------- | -------- | -------: | -------- | -------- | -------- | -------- | -------- | -------- |
+| ddyw     | mtdd     | tzgg     | xwzh     |     rcpy | xsky     | 217      | zsjy     | kycg     | xywx     | xyfc     |
 
 </Route>
 
@@ -606,6 +630,18 @@ category 列表：
 
 </Route>
 
+## 南京林业大学
+
+### 教务处
+
+<Route author="kiusiudeng" example="/njfu/jwc/1798" path="/universities/njfu/jwc/:category?" :paramsDesc="['省略则默认为1799']">
+
+| 校级发文 | 通知公告 | 上级发文 | 下载专区 |
+| -------- | -------- | -------- | -------- |
+| 1798     | 1799     | 2270     | 1797     |
+
+</Route>
+
 ## 南京信息工程大学
 
 ::: tip 提示
@@ -737,6 +773,18 @@ https://rsshub.app/**nuist**/`bulletin` 或 https://rsshub.app/**nuist**/`bullet
 | 通知公告 | 新闻动态 |
 | -------- | -------- |
 | 1        | 2        |
+
+</Route>
+
+## 清华大学
+
+### 清华大学校内信息发布平台
+
+<Route author="prnake" example="/thu/zhongyao" path="/thu/:type" :paramsDesc="['默认为重要公告']">
+
+| 重要公告 | 教务公告 | 科研通知 | 办公通知 | 海报列表 | 疫情防控 |
+| -------- | -------- | -------- | -------- | -------- | :------: |
+| zhongyao | jiaowu   | keyan    | bangong  | haibao   |  yiqing  |
 
 </Route>
 
@@ -1152,6 +1200,18 @@ https://rsshub.app/**nuist**/`bulletin` 或 https://rsshub.app/**nuist**/`bullet
 ### 研究生院综合通知公告
 
 <Route author="sanmmm" example="/cug/graduate" path="/cug/graduate" />
+
+## 中国海洋大学
+
+### 信息科学与工程学院
+
+<Route author="Geo" example="/ouc/it/0" path="/universities/ouc/it/:type?" :paramsDesc="['默认为 `0`']">
+
+| 学院要闻 | 学院公告 | 学院活动 |
+| -------- | -------- | -------- |
+| 0        | 1        | 2        |
+
+</Route>
 
 ## 中国科学院
 

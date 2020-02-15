@@ -16,9 +16,19 @@ pageClass: routes
 
 ## Discuz
 
-### 通用子版块
+### 通用子版块-自动检测
 
 <Route author="junfengP" example="/discuz/http%3a%2f%2fwww.u-share.cn%2fforum.php%3fmod%3dforumdisplay%26fid%3d56" path="/discuz/:link" :paramsDesc="['子版块链接， 需要手动Url编码']"/>
+
+### 通用子版块-指定版本
+
+<Route author="junfengP" example="/discuz/x/https%3a%2f%2fwww.52pojie.cn%2fforum-16-1.html" path="/discuz/:ver/:link" :paramsDesc="['discuz版本类型，见下表','子版块链接， 需要手动Url编码']" >
+
+| Discuz X 系列 | Discuz 7.x 系列 |
+| ------------- | --------------- |
+| x             | 7               |
+
+</Route>
 
 ## MCBBS
 
@@ -176,6 +186,12 @@ pageClass: routes
 ### 楼主动态
 
 <Route author="u3u" example="/tieba/post/lz/5853240586" path="/tieba/post/lz/:id" :paramsDesc="['帖子 ID']"/>
+
+## 小米社区
+
+### 圈子
+
+<Route author="DIYgod" example="/mi/bbs/board/18066617" path="/mi/bbs/board/:boardId" :paramsDesc="['圈子 id，可在圈子 URL 找到']" radar="1"/>
 
 ## 一亩三分地
 
