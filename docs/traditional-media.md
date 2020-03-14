@@ -105,12 +105,22 @@ Solidot 提供的 feed:
 `地区`
 | 香港 | 台灣 | 美國 |
 | ---- | ---- | ---- |
+<<<<<<< HEAD
 | hk | tw | en |
 
 `类別`
 | 新聞總集 | 兩岸國際 | 財經 | 娛樂 | 體育 | 健康 |
 | -------- | -------- | -------- | ------------- | ------ | ------ |
 | (空) | world | business | entertainment | sports | health |
+=======
+| hk | tw | en |
+
+`类別`
+| 新聞總集 | 兩岸國際 | 財經 | 娛樂 | 體育 | 健康 |
+| -------- | -------- | -------- | ------------- | ------ | ------ |
+| (空) | world | business | entertainment | sports | health |
+
+> > > > > > > Add Google News
 
 </Route>
 
@@ -187,6 +197,10 @@ Category 列表:
 ### 24 小时新闻排行榜
 
 <Route author="HenryQW" example="/dwnews/rank" path="/dwnews/rank"/>
+
+## 谷歌新闻
+
+<Route author="zoenglinghou" example="/google/news/要闻/hl=zh-CN&gl=CN&ceid=CN:zh-Hans" path="/google/news/:category/:locale" :paramsDesc="['子分类标题', '地区语言设置，在地址栏 `?` 后，包含 `hl`，`gl`，以及 `ceid` 参数']"/>
 
 ## 华尔街见闻
 
@@ -409,9 +423,14 @@ category 对应的关键词有
 <Route author="LogicJake" example="/sina/discovery/zx" path="/sina/discovery/:type" :paramsDesc="['订阅分区类型']">
 
 分类：
+<<<<<<< HEAD
 | zx | twhk | dwzw | zrdl | lskg | smyx | shbk | kjqy |
-| ---- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| 最新 | 天文航空 | 动物植物 | 自然地理 | 历史考古 | 生命医学 | 生活百科 | 科技前沿 |
+=======
+| zx | twhk | dwzw | zrdl | lskg | smyx | shbk | kjqy |
+
+> > > > > > > Add China Dialogue
+> > > > > > > | ---- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+> > > > > > > | 最新 | 天文航空 | 动物植物 | 自然地理 | 历史考古 | 生命医学 | 生活百科 | 科技前沿 |
 
 </Route>
 
