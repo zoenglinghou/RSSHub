@@ -194,6 +194,20 @@ pageClass: routes
 
 <Route author="xyqfer" example="/itjuzi/merge" path="/itjuzi/merge"/>
 
+## Kotaku
+
+### Story
+
+<Route author="CYTMWIA" example="/kotaku/story/news" path="/kotaku/story/:type" :paramsDesc="['Story类型']">
+
+可在 url 中找到，例如`https://kotaku.com/c/news`和`https://kotaku.com/c/kotaku-east`中的`news`和`kotaku-east`
+
+注意，无论是`news`还是`kotaku-east`之前都有`/c/`
+
+所以，如果您把`https://kotaku.com/latest`中的`latest`填入，该路由并不会正常工作
+
+</Route>
+
 ## Krankenkassen 德国新闻社卫健新闻
 
 ### dpa news
@@ -704,6 +718,20 @@ area 分区选项
 
 <Route author="nczitzk" example="/jinse/lives" path="/jinse/lives"/>
 
+### 头条
+
+<Route author="nczitzk" example="/jinse/timeline" path="/jinse/timeline"/>
+
+### 分类
+
+<Route author="nczitzk" example="/jinse/catalogue/zhengce" path="/jinse/catalogue/:caty" :paramsDesc="['分类名，参见下表']">
+
+| 政策    | 行情         | DeFi | 矿业  | 以太坊 2.0 | 产业     | IPFS | 技术 | 百科  | 研报          |
+| ------- | ------------ | ---- | ----- | ---------- | -------- | ---- | ---- | ----- | ------------- |
+| zhengce | fenxishishuo | defi | kuang | 以太坊 2.0 | industry | IPFS | tech | baike | capitalmarket |
+
+</Route>
+
 ## 鲸跃汽车
 
 ### 首页
@@ -826,6 +854,12 @@ area 分区选项
 | 默认空   | fresh    | industry | talk     | intech        | investor | everything |
 
 </Route>
+
+## 梅斯医学 MedSci
+
+### 推荐
+
+<Route author="nczitzk" example="/medsci/recommend" path="/medsci/recommend"/>
 
 ## 摩根大通研究所
 
@@ -1217,6 +1251,36 @@ area 分区选项
 ### 香评
 
 <Route author="kt286" example="/nosetime/59247733/discuss/new" path="/nosetime/:id/:type/:sort?" :paramsDesc="['用户id，可在用户主页 URL 中找到', '类型，short 一句话香评  discuss 香评', '排序， new 最新  agree 最有用']"/>
+
+## 小刀娱乐网
+
+<Route author="nczitzk" example="/x6d/34" path="/x6d/:id?" :paramsDesc="['分类 id，可在对应分类页面的 URL 中找到，默认为首页最近更新']">
+
+| 技巧分享 | QQ 技巧 | 微信技巧 | 其他教程 | 其他分享 |
+| -------- | ------- | -------- | -------- | -------- |
+| 31       | 55      | 112      | 33       | 88       |
+
+| 宅家自学 | 健身养生 | 摄影剪辑 | 长点知识 | 自我提升 | 两性相关 | 编程办公 | 职场关系 | 新媒体运营 | 其他教程 |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ---------- | -------- |
+| 18       | 98       | 94       | 93       | 99       | 100      | 21       | 22       | 19         | 44       |
+
+| 活动线报 | 流量话费 | 免费会员 | 实物活动 | 游戏活动 | 红包活动 | 空间域名 | 其他活动 |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| 34       | 35       | 91       | 92       | 39       | 38       | 37       | 36       |
+
+| 值得一看 | 找点乐子 | 热门事件 | 节目推荐 |
+| -------- | -------- | -------- | -------- |
+| 65       | 50       | 77       | 101      |
+
+| 值得一听 | 每日一听 | 歌单推荐 |
+| -------- | -------- | -------- |
+| 71       | 87       | 79       |
+
+| 资源宝库 | 书籍资料 | 设计资源 | 剪辑资源 | 办公资源 | 壁纸资源 | 编程资源 |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| 106      | 107      | 108      | 109      | 110      | 111      | 113      |
+
+</Route>
 
 ## 新浪专栏
 
